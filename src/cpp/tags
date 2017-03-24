@@ -1,0 +1,241 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Abs	fitness.hpp	/^T Abs(const T &v) {$/;"	f	namespace:gbdt
+Add	auc.cpp	/^void Auc::Add(ValueType score, ValueType label) {$/;"	f	class:gbdt::Auc
+Add	time.hpp	/^  void Add(const TimeDelta &delta) { us_ += delta.delta_; }$/;"	f	class:gbdt::Time
+AlmostEqual	fitness.cpp	/^bool AlmostEqual(ValueType v1, ValueType v2) {$/;"	f	namespace:gbdt
+Auc	auc.hpp	/^  Auc(): confusion_table(4, 0L), threshold(0.5F) {}$/;"	f	class:gbdt::Auc
+Auc	auc.hpp	/^class Auc {$/;"	c	namespace:gbdt
+Average	fitness.cpp	/^ValueType Average(const DataVector & data, size_t len) {$/;"	f	namespace:gbdt
+Average	fitness.hpp	/^ValueType Average(const DataVector & data) {$/;"	f	namespace:gbdt
+CHILDSIZE	tree.hpp	/^  enum {LT, GE, UNKNOWN, CHILDSIZE};$/;"	e	enum:gbdt::Node::__anon2
+CXX	Makefile	/^CXX = g++-6$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -Wall -Wextra -Wconversion -pedantic -fopenmp -O2$/;"	m
+CalculateAuc	auc.cpp	/^ValueType Auc::CalculateAuc() {$/;"	f	class:gbdt::Auc
+CleanDataVector	data.cpp	/^void CleanDataVector(DataVector *data) {$/;"	f	namespace:gbdt
+Configure	config.hpp	/^  Configure():$/;"	f	class:gbdt::Configure
+Configure	config.hpp	/^class Configure {$/;"	c	namespace:gbdt
+DISALLOW_COPY_AND_ASSIGN	util.hpp	/^#define DISALLOW_COPY_AND_ASSIGN(/;"	d
+DataVector	data.hpp	/^typedef std::vector<Tuple *> DataVector;$/;"	t	namespace:gbdt
+Diff	time.hpp	/^  TimeDelta Diff(const Time &other) const { return TimeDelta(us_ - other.us_); }$/;"	f	class:gbdt::Time
+Elapsed	time.hpp	/^  Elapsed():t_(Time::Now()) {}$/;"	f	class:gbdt::Elapsed
+Elapsed	time.hpp	/^class Elapsed {$/;"	c	namespace:gbdt
+Exploded	time.hpp	/^  struct Exploded {$/;"	s	class:gbdt::Time
+FindSplit	fitness.cpp	/^bool FindSplit(DataVector *data, size_t m,$/;"	f	namespace:gbdt
+FindSplit	fitness.hpp	/^bool FindSplit(DataVector *data, int *index,$/;"	f	namespace:gbdt
+Fit	gbdt.cpp	/^void GBDT::Fit(DataVector *d) {$/;"	f	class:gbdt::GBDT
+Fit	tree.cpp	/^void RegressionTree::Fit(DataVector *data, size_t len) {$/;"	f	class:gbdt::RegressionTree
+Fit	tree.cpp	/^void RegressionTree::Fit(DataVector *data,$/;"	f	class:gbdt::RegressionTree
+Fit	tree.hpp	/^  static void Fit(DataVector *data,$/;"	f	class:gbdt::RegressionTree
+Fit	tree.hpp	/^  void Fit(DataVector *data) { Fit(data, data->size()); }$/;"	f	class:gbdt::RegressionTree
+FreeVector	util.hpp	/^void FreeVector(std::vector<T> *v) {$/;"	f	namespace:gbdt
+FromDays	time.hpp	/^inline TimeDelta TimeDelta::FromDays(int64_t days) {$/;"	f	class:gbdt::TimeDelta
+FromExploded	time.cpp	/^Time Time::FromExploded(const Time::Exploded &e) {$/;"	f	class:gbdt::Time
+FromHours	time.hpp	/^inline TimeDelta TimeDelta::FromHours(int64_t hours) {$/;"	f	class:gbdt::TimeDelta
+FromMicroseconds	time.hpp	/^inline TimeDelta TimeDelta::FromMicroseconds(int64_t us) {$/;"	f	class:gbdt::TimeDelta
+FromMilliseconds	time.hpp	/^inline TimeDelta TimeDelta::FromMilliseconds(int64_t ms) {$/;"	f	class:gbdt::TimeDelta
+FromMinutes	time.hpp	/^inline TimeDelta TimeDelta::FromMinutes(int64_t minutes) {$/;"	f	class:gbdt::TimeDelta
+FromSeconds	time.hpp	/^inline TimeDelta TimeDelta::FromSeconds(int64_t secs) {$/;"	f	class:gbdt::TimeDelta
+FromString	data.cpp	/^Tuple* Tuple::FromString(const std::string &l, bool load_initial_guess) {$/;"	f	class:gbdt::Tuple
+FromString	time.hpp	/^inline Time Time::FromString(const std::string &timestring,$/;"	f	class:gbdt::Time
+FromTM	time.cpp	/^Time::Exploded Time::Exploded::FromTM(const struct tm &timestruct) {$/;"	f	class:gbdt::Time::Exploded
+FromTimeT	time.hpp	/^inline Time Time::FromTimeT(time_t t) {$/;"	f	class:gbdt::Time
+GBDT	gbdt.hpp	/^  GBDT(): trees(NULL),$/;"	f	class:gbdt::GBDT
+GBDT	gbdt.hpp	/^class GBDT {$/;"	c	namespace:gbdt
+GE	tree.hpp	/^  enum {LT, GE, UNKNOWN, CHILDSIZE};$/;"	e	enum:gbdt::Node::__anon2
+GetConfusionTable	auc.hpp	/^  const std::vector<long> &GetConfusionTable() const { return confusion_table; }$/;"	f	class:gbdt::Auc
+GetGain	gbdt.hpp	/^  double *GetGain() { return gain; }$/;"	f	class:gbdt::GBDT
+GetGain	tree.hpp	/^  double *GetGain() { return gain; }$/;"	f	class:gbdt::RegressionTree
+GetImpurity	fitness.cpp	/^bool GetImpurity(DataVector *data, size_t len,$/;"	f	namespace:gbdt
+HasValidValues	time.cpp	/^bool Time::Exploded::HasValidValues() const {$/;"	f	class:gbdt::Time::Exploded
+Init	gbdt.cpp	/^void GBDT::Init(const DataVector &d, size_t len) {$/;"	f	class:gbdt::GBDT
+JoinString	util.cpp	/^std::string JoinString($/;"	f	namespace:gbdt
+LOG_LIKELIHOOD	config.hpp	/^  LOG_LIKELIHOOD                 \/\/ two-class logistic regression and classification$/;"	e	enum:gbdt::Loss
+LT	tree.hpp	/^  enum {LT, GE, UNKNOWN, CHILDSIZE};$/;"	e	enum:gbdt::Node::__anon2
+Load	gbdt.cpp	/^void GBDT::Load(const std::string &s) {$/;"	f	class:gbdt::GBDT
+Load	tree.cpp	/^void RegressionTree::Load(const std::string &s) {$/;"	f	class:gbdt::RegressionTree
+LoadDataFromFile	data.cpp	/^bool LoadDataFromFile(const std::string &path, DataVector *data, bool load_initial_guess, bool ignore_weight) {$/;"	f	namespace:gbdt
+LoadFeatureCost	config.cpp	/^bool Configure::LoadFeatureCost(const std::string &cost_file) {$/;"	f	class:gbdt::Configure
+Logit	fitness.hpp	/^double Logit(ValueType f) {$/;"	f	namespace:gbdt
+LogitLoss	fitness.hpp	/^double LogitLoss(ValueType y, ValueType f) {$/;"	f	namespace:gbdt
+LogitLossGradient	fitness.hpp	/^double LogitLossGradient(ValueType y, ValueType f) {$/;"	f	namespace:gbdt
+LogitOptimalValue	fitness.cpp	/^ValueType LogitOptimalValue(const DataVector &d, size_t len) {$/;"	f	namespace:gbdt
+Loss	config.hpp	/^enum Loss {$/;"	g	namespace:gbdt
+Node	tree.hpp	/^  Node() {$/;"	f	class:gbdt::Node
+Node	tree.hpp	/^class Node {$/;"	c	namespace:gbdt
+Now	time.cpp	/^Time Time::Now() {$/;"	f	class:gbdt::Time
+Predict	gbdt.cpp	/^ValueType GBDT::Predict(const Tuple &t, size_t n) const {$/;"	f	class:gbdt::GBDT
+Predict	gbdt.cpp	/^ValueType GBDT::Predict(const Tuple &t, size_t n, double *p) const {$/;"	f	class:gbdt::GBDT
+Predict	gbdt.hpp	/^  ValueType Predict(const Tuple &t) const {$/;"	f	class:gbdt::GBDT
+Predict	gbdt.hpp	/^  ValueType Predict(const Tuple &t, double *p) const {$/;"	f	class:gbdt::GBDT
+Predict	tree.cpp	/^ValueType RegressionTree::Predict(const Node *root, const Tuple &t) {$/;"	f	class:gbdt::RegressionTree
+Predict	tree.cpp	/^ValueType RegressionTree::Predict(const Node *root, const Tuple &t, double *p) {$/;"	f	class:gbdt::RegressionTree
+Predict	tree.cpp	/^ValueType RegressionTree::Predict(const Tuple &t) const {$/;"	f	class:gbdt::RegressionTree
+Predict	tree.cpp	/^ValueType RegressionTree::Predict(const Tuple &t, double *p) const {$/;"	f	class:gbdt::RegressionTree
+PredictVector	data.hpp	/^typedef std::vector<ValueType> PredictVector;$/;"	t	namespace:gbdt
+PrintConfusionTable	auc.cpp	/^void Auc::PrintConfusionTable() const {$/;"	f	class:gbdt::Auc
+RMSE	fitness.cpp	/^double RMSE(const DataVector &data, const PredictVector &predict, size_t len) {$/;"	f	namespace:gbdt
+RMSE	fitness.hpp	/^double RMSE(const DataVector &data, const PredictVector &predict) {$/;"	f	namespace:gbdt
+RegressionTree	tree.hpp	/^  RegressionTree(): root(NULL), gain(NULL) {}$/;"	f	class:gbdt::RegressionTree
+RegressionTree	tree.hpp	/^class RegressionTree {$/;"	c	namespace:gbdt
+Reset	time.hpp	/^  void Reset() { t_ = Time::Now(); }$/;"	f	class:gbdt::Elapsed
+ResetFeatureCost	config.hpp	/^  void ResetFeatureCost() {$/;"	f	class:gbdt::Configure
+SQUARED_ERROR	config.hpp	/^  SQUARED_ERROR,                 \/\/ regression with squared error loss$/;"	e	enum:gbdt::Loss
+Same	fitness.cpp	/^bool Same(const DataVector &data, size_t len) {$/;"	f	namespace:gbdt
+Same	fitness.hpp	/^bool Same(const DataVector &data) {$/;"	f	namespace:gbdt
+Save	gbdt.cpp	/^std::string GBDT::Save() const {$/;"	f	class:gbdt::GBDT
+Save	tree.cpp	/^std::string RegressionTree::Save() const {$/;"	f	class:gbdt::RegressionTree
+SaveAux	tree.cpp	/^void RegressionTree::SaveAux(const Node *node,$/;"	f	class:gbdt::RegressionTree
+SetThreshold	auc.hpp	/^  void SetThreshold(ValueType t) { threshold = t; }$/;"	f	class:gbdt::Auc
+SplitData	fitness.cpp	/^void SplitData(const DataVector &data, size_t len, int index, ValueType value, DataVector *output) {$/;"	f	namespace:gbdt
+SplitData	fitness.hpp	/^void SplitData(const DataVector &data, int index, ValueType value, DataVector *output) {$/;"	f	namespace:gbdt
+SplitString	util.cpp	/^size_t SplitString(const std::string& str,$/;"	f	namespace:gbdt
+Squared	fitness.hpp	/^T Squared(const T &v) {$/;"	f	namespace:gbdt
+Subtract	time.hpp	/^  void Subtract(const TimeDelta &delta) { us_ -= delta.delta_; }$/;"	f	class:gbdt::Time
+Tell	time.hpp	/^  TimeDelta Tell() { return Time::Now().Diff(t_); }$/;"	f	class:gbdt::Elapsed
+Time	time.hpp	/^  Time(int64_t us): us_(us) {}$/;"	f	class:gbdt::Time
+Time	time.hpp	/^class Time$/;"	c	namespace:gbdt
+TimeDelta	time.hpp	/^  TimeDelta(int64_t us): delta_(us) {}$/;"	f	class:gbdt::TimeDelta
+TimeDelta	time.hpp	/^class TimeDelta$/;"	c	namespace:gbdt
+TimeStringFromTimeT	time.cpp	/^std::string TimeStringFromTimeT(time_t t, const std::string &format) {$/;"	f	namespace:gbdt
+TimeTFromTimeString	time.cpp	/^time_t TimeTFromTimeString(const std::string &time_string, const std::string &format) {$/;"	f	namespace:gbdt
+ToDays	time.hpp	/^inline int64_t TimeDelta::ToDays() const { return delta_ \/ Time::kMicrosecondsPerDay; }$/;"	f	class:gbdt::TimeDelta
+ToExploded	time.cpp	/^Time::Exploded Time::ToExploded() const {$/;"	f	class:gbdt::Time
+ToHours	time.hpp	/^inline int64_t TimeDelta::ToHours() const { return delta_ \/ Time::kMicrosecondsPerHour; }$/;"	f	class:gbdt::TimeDelta
+ToMicroseconds	time.hpp	/^inline int64_t TimeDelta::ToMicroseconds() const { return delta_; }$/;"	f	class:gbdt::TimeDelta
+ToMilliseconds	time.hpp	/^inline int64_t TimeDelta::ToMilliseconds() const { return delta_ \/ Time::kMicrosecondsPerMillisecond; }$/;"	f	class:gbdt::TimeDelta
+ToMinutes	time.hpp	/^inline int64_t TimeDelta::ToMinutes() const { return delta_ \/ Time::kMicrosecondsPerMinute; }$/;"	f	class:gbdt::TimeDelta
+ToSeconds	time.hpp	/^inline int64_t TimeDelta::ToSeconds() const { return delta_ \/ Time::kMicrosecondsPerSecond; }$/;"	f	class:gbdt::TimeDelta
+ToString	config.cpp	/^std::string Configure::ToString() const {$/;"	f	class:gbdt::Configure
+ToString	data.cpp	/^std::string Tuple::ToString(bool output_initial_guess) const {$/;"	f	class:gbdt::Tuple
+ToString	time.hpp	/^  std::string ToString(const std::string &format) const {$/;"	f	class:gbdt::Time
+ToTM	time.cpp	/^void Time::Exploded::ToTM(struct tm *timestruct) const {$/;"	f	class:gbdt::Time::Exploded
+ToTimeT	time.hpp	/^  time_t ToTimeT() const { return us_ \/ kMicrosecondsPerSecond; }$/;"	f	class:gbdt::Time
+Tuple	data.hpp	/^  Tuple():$/;"	f	class:gbdt::Tuple
+Tuple	data.hpp	/^class Tuple {$/;"	c	namespace:gbdt
+TupleCompare	fitness.cpp	/^  TupleCompare(int i): index(i) {}$/;"	f	struct:__anon1::TupleCompare
+TupleCompare	fitness.cpp	/^struct TupleCompare {$/;"	s	namespace:__anon1	file:
+UNKNOWN	tree.hpp	/^  enum {LT, GE, UNKNOWN, CHILDSIZE};$/;"	e	enum:gbdt::Node::__anon2
+UNUSED	util.hpp	/^#define UNUSED(/;"	d
+ValueType	data.hpp	/^typedef double ValueType;$/;"	t	namespace:gbdt
+_AUC_H_	auc.hpp	/^#define _AUC_H_$/;"	d
+_CONFIG_H_	config.hpp	/^#define _CONFIG_H_$/;"	d
+_DATA_H_	data.hpp	/^#define _DATA_H_$/;"	d
+_FITNESS_H_	fitness.hpp	/^#define _FITNESS_H_$/;"	d
+_GBDT_H_	gbdt.hpp	/^#define _GBDT_H_$/;"	d
+_GBDT_TIME_H_	time.hpp	/^#define _GBDT_TIME_H_$/;"	d
+_TREE_H_	tree.hpp	/^#define _TREE_H_$/;"	d
+_UTIL_H_	util.hpp	/^#define _UTIL_H_$/;"	d
+bias	gbdt.hpp	/^  ValueType bias;$/;"	m	class:gbdt::GBDT
+child	tree.hpp	/^  Node *child[CHILDSIZE];$/;"	m	class:gbdt::Node
+confusion_table	auc.hpp	/^  std::vector<long> confusion_table;$/;"	m	class:gbdt::Auc
+data_sample_ratio	config.hpp	/^  double data_sample_ratio;       \/\/ portion of data to be fitted in each iteration$/;"	m	class:gbdt::Configure
+day_of_month	time.hpp	/^    int day_of_month;  \/\/ 1-based day of month (1-31)$/;"	m	struct:gbdt::Time::Exploded
+day_of_week	time.hpp	/^    int day_of_week;   \/\/ 0-based day of week (0 = Sunday, etc.)$/;"	m	struct:gbdt::Time::Exploded
+debug	config.hpp	/^  bool debug;                    \/\/ show debug info?$/;"	m	class:gbdt::Configure
+delta_	time.hpp	/^  int64_t delta_;$/;"	m	class:gbdt::TimeDelta
+enable_feature_tunning	config.hpp	/^  bool enable_feature_tunning;   \/\/ when set true, `feature_costs' is used to tune the model$/;"	m	class:gbdt::Configure
+enable_initial_guess	config.hpp	/^  bool enable_initial_guess;$/;"	m	class:gbdt::Configure
+feature	data.hpp	/^  ValueType *feature;$/;"	m	class:gbdt::Tuple
+feature_costs	config.hpp	/^  double *feature_costs;         \/\/ mannually set feature costs in order to tune the model$/;"	m	class:gbdt::Configure
+feature_sample_ratio	config.hpp	/^  double feature_sample_ratio;    \/\/ portion of features to be splited$/;"	m	class:gbdt::Configure
+g_conf	config.cpp	/^Configure g_conf;$/;"	m	namespace:gbdt	file:
+gain	gbdt.hpp	/^  double *gain;$/;"	m	class:gbdt::GBDT
+gain	tree.hpp	/^  double *gain;$/;"	m	class:gbdt::RegressionTree
+gbdt	auc.cpp	/^namespace gbdt {$/;"	n	file:
+gbdt	auc.hpp	/^namespace gbdt {$/;"	n
+gbdt	config.cpp	/^namespace gbdt {$/;"	n	file:
+gbdt	config.hpp	/^namespace gbdt {$/;"	n
+gbdt	data.cpp	/^namespace gbdt {$/;"	n	file:
+gbdt	data.hpp	/^namespace gbdt {$/;"	n
+gbdt	fitness.cpp	/^namespace gbdt {$/;"	n	file:
+gbdt	fitness.hpp	/^namespace gbdt {$/;"	n
+gbdt	gbdt.cpp	/^namespace gbdt {$/;"	n	file:
+gbdt	gbdt.hpp	/^namespace gbdt {$/;"	n
+gbdt	time.cpp	/^namespace gbdt {$/;"	n	file:
+gbdt	time.hpp	/^namespace gbdt {$/;"	n
+gbdt	tree.cpp	/^namespace gbdt {$/;"	n	file:
+gbdt	tree.hpp	/^namespace gbdt {$/;"	n
+gbdt	util.cpp	/^namespace gbdt {$/;"	n	file:
+gbdt	util.hpp	/^namespace gbdt {$/;"	n
+header_files	Makefile	/^header_files = data.hpp fitness.hpp tree.hpp util.hpp config.hpp gbdt.hpp time.hpp auc.hpp$/;"	m
+hour	time.hpp	/^    int hour;          \/\/ Hour within the current day (0-23)$/;"	m	struct:gbdt::Time::Exploded
+index	fitness.cpp	/^  int index;$/;"	m	struct:__anon1::TupleCompare	file:
+index	tree.hpp	/^  int index;$/;"	m	class:gbdt::Node
+initial_guess	data.hpp	/^  ValueType initial_guess;$/;"	m	class:gbdt::Tuple
+is_in_range	time.cpp	/^inline bool is_in_range(int value, int lo, int hi) {$/;"	f	namespace:gbdt
+iterations	config.hpp	/^  size_t iterations;             \/\/ number of trees in gbdt$/;"	m	class:gbdt::Configure
+iterations	gbdt.hpp	/^  size_t iterations;$/;"	m	class:gbdt::GBDT
+kItemDelimiter	data.cpp	/^static const std::string kItemDelimiter = " ";$/;"	m	namespace:gbdt	file:
+kKVDelimiter	data.cpp	/^static const std::string kKVDelimiter = ":";$/;"	m	namespace:gbdt	file:
+kMicrosecondsPerDay	time.hpp	/^  static const int64_t kMicrosecondsPerDay = kMicrosecondsPerHour * 24;$/;"	m	class:gbdt::Time
+kMicrosecondsPerHour	time.hpp	/^  static const int64_t kMicrosecondsPerHour = kMicrosecondsPerMinute * 60;$/;"	m	class:gbdt::Time
+kMicrosecondsPerMillisecond	time.hpp	/^  static const int64_t kMicrosecondsPerMillisecond = 1000;$/;"	m	class:gbdt::Time
+kMicrosecondsPerMinute	time.hpp	/^  static const int64_t kMicrosecondsPerMinute = kMicrosecondsPerSecond * 60;$/;"	m	class:gbdt::Time
+kMicrosecondsPerSecond	time.hpp	/^  static const int64_t kMicrosecondsPerSecond = kMicrosecondsPerMillisecond *$/;"	m	class:gbdt::Time
+kMicrosecondsPerWeek	time.hpp	/^  static const int64_t kMicrosecondsPerWeek = kMicrosecondsPerDay * 7;$/;"	m	class:gbdt::Time
+kMillisecondsPerSecond	time.hpp	/^  static const int64_t kMillisecondsPerSecond = 1000;$/;"	m	class:gbdt::Time
+kNanosecondsPerMicrosecond	time.hpp	/^  static const int64_t kNanosecondsPerMicrosecond = 1000;$/;"	m	class:gbdt::Time
+kNanosecondsPerSecond	time.hpp	/^  static const int64_t kNanosecondsPerSecond = kNanosecondsPerMicrosecond *$/;"	m	class:gbdt::Time
+kUnknownValue	data.hpp	/^const ValueType kUnknownValue = kValueTypeMin;$/;"	m	namespace:gbdt
+kValueTypeMax	data.hpp	/^const ValueType kValueTypeMax = std::numeric_limits<ValueType>::max();$/;"	m	namespace:gbdt
+kValueTypeMin	data.hpp	/^const ValueType kValueTypeMin = std::numeric_limits<ValueType>::min();$/;"	m	namespace:gbdt
+label	data.hpp	/^  ValueType label;$/;"	m	class:gbdt::Tuple
+leaf	tree.hpp	/^  bool leaf;$/;"	m	class:gbdt::Node
+loss	config.hpp	/^  Loss loss;                     \/\/ loss type$/;"	m	class:gbdt::Configure
+main	ctr.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	data_unittest.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	gbdt_predict.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	gbdt_train.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+main	tree_unittest.cpp	/^int main(int argc, char *argv[]) {$/;"	f
+max_depth	config.hpp	/^  size_t max_depth;              \/\/ max depth for each tree$/;"	m	class:gbdt::Configure
+millisecond	time.hpp	/^    int millisecond;   \/\/ Milliseconds within the current second (0-999)$/;"	m	struct:gbdt::Time::Exploded
+min_leaf_size	config.hpp	/^  size_t min_leaf_size;          \/\/ min number of nodes in leaf$/;"	m	class:gbdt::Configure
+minute	time.hpp	/^    int minute;        \/\/ Minute within the current hour (0-59)$/;"	m	struct:gbdt::Time::Exploded
+month	time.hpp	/^    int month;         \/\/ 1-based month (values 1 = January, etc.)$/;"	m	struct:gbdt::Time::Exploded
+negative_scores	auc.hpp	/^  std::vector<ValueType> negative_scores;$/;"	m	class:gbdt::Auc
+number_of_feature	config.hpp	/^  size_t number_of_feature;      \/\/ number of features$/;"	m	class:gbdt::Configure
+object_files	Makefile	/^object_files = data.o fitness.o tree.o util.o config.o gbdt.o auc.o time.o$/;"	m
+operator !=	time.hpp	/^  bool operator!=(Time other) const {$/;"	f	class:gbdt::Time
+operator ()	fitness.cpp	/^  bool operator () (const gbdt::Tuple *t1, const gbdt::Tuple *t2) {$/;"	f	struct:__anon1::TupleCompare
+operator *	time.hpp	/^  TimeDelta operator*(const T &n) const { return TimeDelta(delta_ * n); }$/;"	f	class:gbdt::TimeDelta
+operator *=	time.hpp	/^  const TimeDelta& operator*=(const T &n) { delta_ *= n; return *this; }$/;"	f	class:gbdt::TimeDelta
+operator +	time.hpp	/^  Time operator+(const TimeDelta &delta) const { return Time(us_ + delta.delta_); }$/;"	f	class:gbdt::Time
+operator +	time.hpp	/^  TimeDelta operator+(const TimeDelta &other) const { return TimeDelta(delta_ + other.delta_); }$/;"	f	class:gbdt::TimeDelta
+operator +=	time.hpp	/^  const Time& operator+=(const TimeDelta &delta) { us_ += delta.delta_; return *this; }$/;"	f	class:gbdt::Time
+operator +=	time.hpp	/^  const TimeDelta& operator+=(const TimeDelta &other) { delta_ += other.delta_; return *this; }$/;"	f	class:gbdt::TimeDelta
+operator -	time.hpp	/^  Time operator-(const TimeDelta &delta) const { return Time(us_ - delta.delta_); }$/;"	f	class:gbdt::Time
+operator -	time.hpp	/^  TimeDelta operator-(const TimeDelta &other) const { return TimeDelta(delta_ - other.delta_); }$/;"	f	class:gbdt::TimeDelta
+operator -=	time.hpp	/^  const Time& operator-=(const TimeDelta &delta) { us_ -= delta.delta_; return *this; }$/;"	f	class:gbdt::Time
+operator -=	time.hpp	/^  const TimeDelta& operator-=(const TimeDelta &other) { delta_ -= other.delta_; return *this; }$/;"	f	class:gbdt::TimeDelta
+operator /	time.hpp	/^  TimeDelta operator\/(const T &n) const { return TimeDelta(delta_ \/ n); }$/;"	f	class:gbdt::TimeDelta
+operator /=	time.hpp	/^  const TimeDelta& operator\/=(const T &n) { delta_ \/= n; return *this; }$/;"	f	class:gbdt::TimeDelta
+operator <	time.hpp	/^  bool operator<(Time other) const {$/;"	f	class:gbdt::Time
+operator <=	time.hpp	/^  bool operator<=(Time other) const {$/;"	f	class:gbdt::Time
+operator ==	time.hpp	/^  bool operator==(Time other) const {$/;"	f	class:gbdt::Time
+operator >	time.hpp	/^  bool operator>(Time other) const {$/;"	f	class:gbdt::Time
+operator >=	time.hpp	/^  bool operator>=(Time other) const {$/;"	f	class:gbdt::Time
+positive_scores	auc.hpp	/^  std::vector<ValueType> positive_scores;$/;"	m	class:gbdt::Auc
+pred	tree.hpp	/^  ValueType pred;$/;"	m	class:gbdt::Node
+root	tree.hpp	/^  Node *root;$/;"	m	class:gbdt::RegressionTree
+second	time.hpp	/^    int second;        \/\/ Second within the current minute (0-59 plus leap$/;"	m	struct:gbdt::Time::Exploded
+shrinkage	config.hpp	/^  double shrinkage;               \/\/ shrinkage parameter$/;"	m	class:gbdt::Configure
+shrinkage	gbdt.hpp	/^  ValueType shrinkage;$/;"	m	class:gbdt::GBDT
+t_	time.hpp	/^  Time t_;$/;"	m	class:gbdt::Elapsed
+target	data.hpp	/^  ValueType target;$/;"	m	class:gbdt::Tuple
+tests	Makefile	/^tests = data_unittest tree_unittest$/;"	m
+threshold	auc.hpp	/^  ValueType threshold;$/;"	m	class:gbdt::Auc
+trees	gbdt.hpp	/^  RegressionTree *trees;$/;"	m	class:gbdt::GBDT
+us_	time.hpp	/^  int64_t us_;$/;"	m	class:gbdt::Time
+value	tree.hpp	/^  ValueType value;$/;"	m	class:gbdt::Node
+weight	data.hpp	/^  ValueType weight;$/;"	m	class:gbdt::Tuple
+year	time.hpp	/^    int year;          \/\/ Four digit year "2007"$/;"	m	struct:gbdt::Time::Exploded
+~Configure	config.hpp	/^  ~Configure() { delete[] feature_costs; }$/;"	f	class:gbdt::Configure
+~GBDT	gbdt.cpp	/^GBDT::~GBDT() {$/;"	f	class:gbdt::GBDT
+~Node	tree.hpp	/^  ~Node() {$/;"	f	class:gbdt::Node
+~RegressionTree	tree.hpp	/^  ~RegressionTree() { delete root; delete[] gain; }$/;"	f	class:gbdt::RegressionTree
+~Tuple	data.hpp	/^  ~Tuple() {$/;"	f	class:gbdt::Tuple
